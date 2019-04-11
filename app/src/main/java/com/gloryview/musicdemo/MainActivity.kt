@@ -67,6 +67,7 @@ class MainActivity : AppCompatActivity() {
                 .apply {
                     registerCallback(MediaControllerCallback())
                 }
+            Log.d("music", "mediaBrowser.root :"+mediaBrowser.root)
         }
 
         override fun onConnectionSuspended() {
