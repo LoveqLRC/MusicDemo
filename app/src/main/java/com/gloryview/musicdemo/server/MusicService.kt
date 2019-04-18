@@ -55,7 +55,7 @@ class MusicService : MediaBrowserServiceCompat() {
 
 
     override fun onLoadChildren(parentId: String, result: Result<MutableList<MediaBrowserCompat.MediaItem>>) {
-        Log.d("music", "MusicService onLoadChildren$parentId")
+        Log.d("music", "MusicService onLoadChildren  $parentId")
         val children = mutableListOf<MediaBrowserCompat.MediaItem>()
         children.add(MediaBrowserCompat.MediaItem(MediaDescriptionCompat.Builder().setDescription("hello world")
             .setMediaId("mediaId").build(), FLAG_BROWSABLE))
